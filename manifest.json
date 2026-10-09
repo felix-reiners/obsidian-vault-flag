@@ -1,0 +1,10 @@
+{
+	"id": "vault-flag",
+	"name": "Vault Flag",
+	"version": "0.1.0",
+	"minAppVersion": "1.5.7",
+	"description": "Give each vault a name, an emoji and a color, shown in a bar across the top of every window, so you can tell open vaults apart at a glance.",
+	"author": "Felix Reiners",
+	"authorUrl": "https://github.com/felix-reiners",
+	"isDesktopOnly": true
+}

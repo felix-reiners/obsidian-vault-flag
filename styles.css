@@ -1,0 +1,52 @@
+.vault-flag-bar {
+	--vault-flag-height: 32px;
+	flex: 0 0 var(--vault-flag-height);
+	height: var(--vault-flag-height);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.45em;
+	padding: 0 96px;
+	background-color: var(--vault-flag-bg);
+	color: var(--vault-flag-fg);
+	font-family: var(--font-interface);
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	line-height: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	user-select: none;
+	-webkit-app-region: drag;
+}
+
+/* Obsidian pins some controls (ribbon, sidebar toggles) to the window's top edge.
+   Containing the main area makes "top" mean "below the bar" for all of them. */
+body.has-vault-flag .horizontal-main-container {
+	contain: layout;
+}
+
+.vault-flag-emoji {
+	font-size: 1.3em;
+}
+
+.vault-flag-label {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.vault-flag-preview {
+	border-radius: var(--radius-m);
+	margin-bottom: var(--size-4-4);
+	-webkit-app-region: no-drag;
+}
+
+.vault-flag-swatch {
+	display: inline-block;
+	width: 0.8em;
+	height: 0.8em;
+	margin-right: 0.5em;
+	border-radius: 50%;
+	vertical-align: middle;
+	background-color: var(--vault-flag-bg);
+}
